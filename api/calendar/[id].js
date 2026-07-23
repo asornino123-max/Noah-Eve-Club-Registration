@@ -11,7 +11,13 @@ module.exports = async function handler(request, response) {
   const url = new URL(request.url, `https://${request.headers.host || "localhost"}`);
   const fileName = decodeURIComponent(url.pathname.split("/").pop() || "");
   const id = fileName.replace(/\.ics$/i, "");
-  const registration = await registrationService.findRegistrationById(id);
+  let registration;
+  try {
+    registration = await registrationService.findRegistrationById(id);
+  } catch (error) {
+    sendText(response, 500, error.message);
+    return;
+  }
 
   if (!registration) {
     sendText(response, 404, "Calendar file not found");

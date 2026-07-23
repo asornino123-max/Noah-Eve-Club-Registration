@@ -15,10 +15,14 @@ module.exports = async function handler(request, response) {
     return;
   }
 
-  const registrations = await registrationService.searchRegistrations(url.searchParams.get("q") || "");
-  response.writeHead(200, {
-    "Content-Type": "text/csv; charset=utf-8",
-    "Content-Disposition": "attachment; filename=noah-eve-club-registrations.csv"
-  });
-  response.end(registrationService.toCsv(registrations));
+  try {
+    const registrations = await registrationService.searchRegistrations(url.searchParams.get("q") || "");
+    response.writeHead(200, {
+      "Content-Type": "text/csv; charset=utf-8",
+      "Content-Disposition": "attachment; filename=noah-eve-club-registrations.csv"
+    });
+    response.end(registrationService.toCsv(registrations));
+  } catch (error) {
+    sendJson(response, 500, { ok: false, errors: { server: error.message } });
+  }
 };

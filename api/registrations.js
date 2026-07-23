@@ -15,6 +15,10 @@ module.exports = async function handler(request, response) {
     return;
   }
 
-  const registrations = await registrationService.searchRegistrations(url.searchParams.get("q") || "");
-  sendJson(response, 200, { ok: true, registrations });
+  try {
+    const registrations = await registrationService.searchRegistrations(url.searchParams.get("q") || "");
+    sendJson(response, 200, { ok: true, registrations });
+  } catch (error) {
+    sendJson(response, 500, { ok: false, errors: { server: error.message } });
+  }
 };
