@@ -18,11 +18,17 @@ function supabaseEndpoint(table, query = "") {
 }
 
 async function supabaseRequest(table, query, options = {}) {
+  const authHeaders = {
+    apikey: config.supabase.serviceRoleKey
+  };
+  if (!config.supabase.serviceRoleKey.startsWith("sb_secret_")) {
+    authHeaders.Authorization = `Bearer ${config.supabase.serviceRoleKey}`;
+  }
+
   const response = await fetch(supabaseEndpoint(table, query), {
     ...options,
     headers: {
-      apikey: config.supabase.serviceRoleKey,
-      Authorization: `Bearer ${config.supabase.serviceRoleKey}`,
+      ...authHeaders,
       "Content-Type": "application/json",
       ...(options.headers || {})
     }
