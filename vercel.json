@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/api/calendar/:id.ics",
+      "destination": "/api/calendar/:id"
+    }
+  ]
+}

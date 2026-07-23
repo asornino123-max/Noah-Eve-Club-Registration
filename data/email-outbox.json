@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1784809044789-welcome",
+    "type": "welcome",
+    "registrationId": "3f38c33e-65d5-4db2-9926-2e101a0068bf",
+    "createdAt": "2026-07-23T12:17:24.789Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784809044737@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000001\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784809121489-welcome",
+    "type": "welcome",
+    "registrationId": "d539778f-75be-4452-87ea-3210d565b40b",
+    "createdAt": "2026-07-23T12:18:41.489Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "browser.proof.1784809119065@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Browser,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000002\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784809948265-welcome",
+    "type": "welcome",
+    "registrationId": "6ce95678-1084-4c9c-8c2c-922888756455",
+    "createdAt": "2026-07-23T12:32:28.265Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "asornino123@gmail.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Nino,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000003\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784810114042-welcome",
+    "type": "welcome",
+    "registrationId": "481bef06-1152-46f5-9ab5-3eadcd7fb53c",
+    "createdAt": "2026-07-23T12:35:14.042Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784810113986@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000004\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784810856434-welcome",
+    "type": "welcome",
+    "registrationId": "586ceb28-cc20-4545-9d07-4408c898a5ce",
+    "createdAt": "2026-07-23T12:47:36.434Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784810856351@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000005\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784810884837-welcome",
+    "type": "welcome",
+    "registrationId": "744bf964-1682-457f-8a49-b42289a97003",
+    "createdAt": "2026-07-23T12:48:04.837Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "journey.review.1784810879367@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Journey,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000006\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784811049773-welcome",
+    "type": "welcome",
+    "registrationId": "4ce5b376-2011-4c48-804f-cf770e12f293",
+    "createdAt": "2026-07-23T12:50:49.773Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784811049730@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000007\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784811117608-welcome",
+    "type": "welcome",
+    "registrationId": "b119576a-d6a9-47ee-ade2-836548116ce8",
+    "createdAt": "2026-07-23T12:51:57.608Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784811117542@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000008\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784812221549-welcome",
+    "type": "welcome",
+    "registrationId": "43b30816-9fff-4aab-982f-571a19f9500a",
+    "createdAt": "2026-07-23T13:10:21.549Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784812221492@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000009\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784812270112-welcome",
+    "type": "welcome",
+    "registrationId": "20bded08-76bb-4899-bc8a-31a812604cd7",
+    "createdAt": "2026-07-23T13:11:10.112Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784812270061@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000010\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  },
+  {
+    "id": "1784813059112-welcome",
+    "type": "welcome",
+    "registrationId": "ebad699f-cda4-4d0f-8da4-42e69f2de393",
+    "createdAt": "2026-07-23T13:24:19.112Z",
+    "provider": "local-outbox",
+    "message": {
+      "to": "test.member.1784813059067@example.com",
+      "from": "Noah & Eve Center <members@noahandeve.local>",
+      "subject": "Welcome to Noah & Eve Club - Your Membership is Now Active",
+      "text": "Hello Test,\n\nWelcome to the Noah & Eve Club.\n\nThank you for becoming part of our growing community dedicated to confidence, wellness, and long-term aesthetic care.\n\nYour 1-year membership is now active, and you may now enjoy the following exclusive privileges:\n- 10% OFF all aesthetic treatments and doctor services\n- 10% OFF all Noah & Eve merchandise\n- An additional 2% OFF on top of any ongoing clinic promotions\n- One (1) FREE Birthday Facial during your birthday month\n- FREE LED Light Therapy for your skin or hair with every clinic visit\n- FREE access to all Noah & Eve Club community events, wellness talks, and exclusive member gatherings\n\nMembership ID: NEC-2026-000011\nActivation Date: 2026-07-23\nExpiration Date: 2027-07-23\n\nTo redeem your benefits, simply inform our team that you are a Noah & Eve Club member during your visit.\n\nIf you have any questions, we're always happy to help.\nViber: 0917 301 7806\nInstagram: @noahandeveclub\n\nWe look forward to being part of your wellness and aesthetic journey.\n\nWith care,\nThe Noah & Eve Center Team"
+    },
+    "status": "mock-sent"
+  }
+]

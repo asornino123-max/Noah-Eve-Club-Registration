@@ -1,0 +1,14 @@
+{
+  "name": "noah-eve-club-registration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Noah & Eve Club registration form with local backend, duplicate checks, CSV export, and email outbox fallback.",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js",
+    "test:api": "node tools/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

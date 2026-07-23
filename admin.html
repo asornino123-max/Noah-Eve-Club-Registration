@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noah & Eve Club - Admin</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header site-header--admin">
+      <a class="brand brand--text" href="/">Noah & Eve Club</a>
+      <a class="admin-link" href="/">Registration</a>
+    </header>
+    <main class="admin-main">
+      <section class="admin-panel">
+        <div class="admin-heading">
+          <div>
+            <p class="eyebrow">Admin</p>
+            <h1>Registrations</h1>
+          </div>
+          <a class="primary-btn primary-btn--small" id="exportLink" href="/api/export.csv">Export CSV</a>
+        </div>
+        <label class="search-box">
+          <span>Admin token</span>
+          <input id="adminToken" placeholder="Default local token: local-dev" />
+        </label>
+        <label class="search-box">
+          <span>Search database</span>
+          <input id="searchInput" placeholder="Name, email, mobile, membership ID..." />
+        </label>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Membership ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Active</th>
+                <th>Expires</th>
+              </tr>
+            </thead>
+            <tbody id="registrationsBody"></tbody>
+          </table>
+        </div>
+        <p id="adminStatus" class="form-status"></p>
+      </section>
+    </main>
+    <script src="src/admin.js"></script>
+  </body>
+</html>

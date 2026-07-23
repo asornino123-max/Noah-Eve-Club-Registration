@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noah & Eve Club - Registration</title>
+    <meta
+      name="description"
+      content="Join Noah & Eve Club and enjoy one full year of exclusive wellness and aesthetic privileges."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="motion-field" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img src="public/assets/noah-eve-logo.png" alt="Noah & Eve Center" />
+      </a>
+      <a class="admin-link" href="/admin.html">Admin</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">One-year wellness membership</p>
+        <h1 id="hero-title">Welcome to Noah & Eve Club</h1>
+        <p class="hero-copy">
+          Become part of our wellness community and enjoy exclusive member
+          privileges for one full year.
+        </p>
+      </section>
+
+      <section class="benefits" aria-labelledby="benefits-title">
+        <div>
+          <p class="eyebrow">Member Privileges</p>
+          <h2 id="benefits-title">Every Noah & Eve Club member receives</h2>
+        </div>
+        <div class="benefit-grid">
+          <article><i data-lucide="stethoscope"></i><span>10% off doctor treatments</span></article>
+          <article><i data-lucide="sparkles"></i><span>10% off aesthetic services</span></article>
+          <article><i data-lucide="shopping-bag"></i><span>10% off merchandise</span></article>
+          <article><i data-lucide="badge-percent"></i><span>Extra 2% off current promos</span></article>
+          <article><i data-lucide="cake"></i><span>Free birthday facial</span></article>
+          <article><i data-lucide="sun-medium"></i><span>Free LED therapy every visit</span></article>
+          <article><i data-lucide="users-round"></i><span>Free community events access</span></article>
+          <article><i data-lucide="ticket-check"></i><span>Priority launches and promotions</span></article>
+        </div>
+      </section>
+
+      <section class="registration-shell">
+        <form id="registrationForm" class="registration-form" novalidate>
+          <div class="form-heading">
+            <p class="eyebrow">Registration</p>
+            <h2>Join Noah & Eve Club</h2>
+            <p>Please complete your details below. Required fields are marked with an asterisk.</p>
+          </div>
+
+          <div class="journey-steps" aria-label="Registration progress">
+            <span class="is-active" data-step-dot="1">1</span>
+            <i></i>
+            <span data-step-dot="2">2</span>
+          </div>
+
+          <fieldset data-step-panel="1">
+            <legend>Personal Information</legend>
+            <div class="field-grid">
+              <label>
+                <span>First Name *</span>
+                <input name="firstName" autocomplete="given-name" required />
+                <small data-error-for="firstName"></small>
+              </label>
+              <label>
+                <span>Last Name *</span>
+                <input name="lastName" autocomplete="family-name" required />
+                <small data-error-for="lastName"></small>
+              </label>
+              <label>
+                <span>Preferred Name</span>
+                <input name="preferredName" />
+              </label>
+              <label>
+                <span>Birthday *</span>
+                <input name="birthday" id="birthday" type="date" required />
+                <small data-error-for="birthday"></small>
+              </label>
+              <label>
+                <span>Age</span>
+                <input name="age" id="age" readonly placeholder="Auto-computed" />
+              </label>
+              <label>
+                <span>Gender</span>
+                <select name="gender">
+                  <option value="">Select</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                  <option>Non-binary</option>
+                  <option>Prefer not to say</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                <span>Email Address *</span>
+                <input name="email" type="email" autocomplete="email" required />
+                <small data-error-for="email"></small>
+              </label>
+              <label>
+                <span>Mobile Number *</span>
+                <input name="mobileNumber" type="tel" autocomplete="tel" required />
+                <small data-error-for="mobileNumber"></small>
+              </label>
+              <label>
+                <span>Viber Number <em>(if different)</em></span>
+                <input name="viberNumber" type="tel" />
+              </label>
+              <label>
+                <span>City</span>
+                <input name="city" autocomplete="address-level2" />
+              </label>
+              <label class="wide">
+                <span>Home Address</span>
+                <input name="homeAddress" autocomplete="street-address" />
+              </label>
+              <label>
+                <span>Occupation</span>
+                <input name="occupation" />
+              </label>
+              <label>
+                <span>Company</span>
+                <input name="company" autocomplete="organization" />
+              </label>
+              <label>
+                <span>Instagram Username</span>
+                <input name="instagramUsername" placeholder="@username" />
+              </label>
+              <label>
+                <span>Facebook Profile <em>(optional)</em></span>
+                <input name="facebookProfile" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset data-step-panel="2" hidden>
+            <legend>Health Information</legend>
+            <div class="field-grid">
+              <label class="wide">
+                <span>Do you currently have any medical conditions?</span>
+                <textarea name="medicalConditions" rows="4"></textarea>
+              </label>
+              <label>
+                <span>Current Medications</span>
+                <textarea name="currentMedications" rows="3"></textarea>
+              </label>
+              <label>
+                <span>Known Allergies</span>
+                <textarea name="knownAllergies" rows="3"></textarea>
+              </label>
+            </div>
+            <div class="choice-group">
+              <span>Current aesthetic concerns</span>
+              <div class="chips" data-checkbox-group="aestheticConcerns"></div>
+            </div>
+          </fieldset>
+
+          <fieldset data-step-panel="2" hidden>
+            <legend>Interests</legend>
+            <div class="choice-group">
+              <span>Which services are you interested in?</span>
+              <div class="chips" data-checkbox-group="serviceInterests"></div>
+            </div>
+            <label class="select-line">
+              <span>How did you hear about Noah & Eve?</span>
+              <select name="referralSource">
+                <option value="">Select one</option>
+                <option>Instagram</option>
+                <option>Facebook</option>
+                <option>TikTok</option>
+                <option>Google</option>
+                <option>Friend</option>
+                <option>ClassPass</option>
+                <option>Walk-in</option>
+                <option>Existing Client</option>
+                <option>Doctor Referral</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset data-step-panel="2" hidden>
+            <legend>Communication Preferences</legend>
+            <div class="choice-group">
+              <span>I would like to receive</span>
+              <div class="chips" data-checkbox-group="communicationPreferences"></div>
+            </div>
+          </fieldset>
+
+          <fieldset data-step-panel="2" hidden>
+            <legend>Set Your Welcome Visit Calendar</legend>
+            <div class="field-grid">
+              <label>
+                <span>Preferred Visit Date</span>
+                <input name="preferredVisitDate" type="date" />
+              </label>
+              <label>
+                <span>Preferred Visit Time</span>
+                <input name="preferredVisitTime" type="time" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset data-step-panel="2" hidden>
+            <legend>Consent</legend>
+            <div class="consents">
+              <label><input name="informationAccuracy" type="checkbox" /> I certify that all information provided is accurate.</label>
+              <label><input name="marketingConsent" type="checkbox" /> I agree to receive marketing communications from Noah & Eve Center.</label>
+              <label>
+                <input name="privacyConsent" type="checkbox" required />
+                I agree to the Privacy Policy and Terms & Conditions. *
+              </label>
+              <small data-error-for="privacyConsent"></small>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="secondary-btn" type="button" data-prev-step hidden>Back</button>
+            <button class="primary-btn" type="button" data-next-step>Continue</button>
+            <button class="primary-btn" type="submit" hidden>Join Noah & Eve Club</button>
+          </div>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="summary-card" aria-labelledby="summary-title">
+          <p class="eyebrow">Membership Summary</p>
+          <h2 id="summary-title">Your Noah & Eve Club Membership Includes</h2>
+          <ul>
+            <li>10% off all treatments</li>
+            <li>10% off merchandise</li>
+            <li>Additional 2% off above existing promos</li>
+            <li>Free birthday facial</li>
+            <li>Free LED therapy every visit</li>
+            <li>Free access to Noah & Eve Club events</li>
+          </ul>
+          <div class="duration">
+            <span>Membership Duration</span>
+            <strong>1 Year</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section id="successPanel" class="success-panel" hidden>
+        <p class="eyebrow">Congratulations</p>
+        <h2>Welcome to the Noah & Eve Club.</h2>
+        <p>
+          Your membership has been successfully registered. Your exclusive member
+          benefits are now active.
+        </p>
+        <dl>
+          <div><dt>Member</dt><dd id="successName"></dd></div>
+          <div><dt>Membership ID</dt><dd id="successId"></dd></div>
+          <div><dt>Activation Date</dt><dd id="successActivation"></dd></div>
+          <div><dt>Expiration Date</dt><dd id="successExpiration"></dd></div>
+        </dl>
+        <p id="successEmailMessage">Please check your email for your membership confirmation and benefits guide.</p>
+        <div class="calendar-card">
+          <h3>Set the calendar schedule</h3>
+          <p>Add your welcome visit to your preferred calendar.</p>
+          <div class="calendar-actions">
+            <a id="googleCalendarLink" target="_blank" rel="noreferrer">
+              <i data-lucide="calendar-plus"></i>
+              Google Calendar
+            </a>
+            <a id="outlookCalendarLink" target="_blank" rel="noreferrer">
+              <i data-lucide="mail"></i>
+              Outlook
+            </a>
+            <a id="icsCalendarLink" download>
+              <i data-lucide="download"></i>
+              Apple / ICS
+            </a>
+          </div>
+        </div>
+        <a class="primary-btn" id="bookingLink" href="https://www.instagram.com/noahandeveclub/" target="_blank" rel="noreferrer">
+          Book My Next Visit
+        </a>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
