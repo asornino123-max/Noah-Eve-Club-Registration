@@ -2,5 +2,8 @@ node_modules/
 .env
 .vercel/
 data/*.tmp
+public/admin.html
+public/index.html
+public/src/
 
 .vercel

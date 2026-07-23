@@ -102,7 +102,13 @@ async function serveStatic(request, response, url) {
       filePath = path.join(filePath, "index.html");
     }
   } catch {
-    filePath = path.join(config.publicDir, "index.html");
+    const publicFilePath = path.join(config.rootDir, "public", safePath);
+    try {
+      const stat = await fs.stat(publicFilePath);
+      filePath = stat.isDirectory() ? path.join(publicFilePath, "index.html") : publicFilePath;
+    } catch {
+      filePath = path.join(config.publicDir, "index.html");
+    }
   }
 
   try {
