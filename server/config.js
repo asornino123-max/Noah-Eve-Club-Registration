@@ -19,6 +19,8 @@ module.exports = {
   email: {
     resendApiKey: process.env.RESEND_API_KEY || "",
     from: process.env.EMAIL_FROM || "Noah & Eve Center <members@noahandeve.local>",
-    teamNotifyEmail: process.env.TEAM_NOTIFY_EMAIL || ""
+    teamNotifyEmail: process.env.TEAM_NOTIFY_EMAIL || "",
+    appsScriptWebhookUrl: process.env.APPS_SCRIPT_EMAIL_WEBHOOK_URL || "",
+    appsScriptSecret: process.env.APPS_SCRIPT_EMAIL_SECRET || ""
   }
 };

@@ -44,7 +44,7 @@ The local admin token defaults to:
 local-dev
 ```
 
-For production email on Vercel, use Resend:
+For production email on Vercel, use either Resend or Google Apps Script:
 
 ```text
 ADMIN_TOKEN=
@@ -53,6 +53,8 @@ SUPABASE_SERVICE_ROLE_KEY=
 RESEND_API_KEY=
 EMAIL_FROM=
 TEAM_NOTIFY_EMAIL=
+APPS_SCRIPT_EMAIL_WEBHOOK_URL=
+APPS_SCRIPT_EMAIL_SECRET=
 BOOKING_URL=
 ```
 
@@ -64,10 +66,21 @@ still runs locally through `npm run dev`.
 1. Create a Supabase project.
 2. Run the SQL in `database/supabase-schema.sql` inside Supabase SQL Editor.
 3. Add the Vercel environment variables listed above.
-4. Set `EMAIL_FROM` to a Resend-verified sender, for example
-   `Noah & Eve Center <members@yourdomain.com>`.
+4. Configure production email with either Resend or Google Apps Script.
 5. Deploy the project folder to Vercel.
 
 When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are present, registrations
 are stored in Supabase. Without those values, local development uses the JSON
 files in `data/`.
+
+## Google Apps Script Email
+
+If you do not want Resend, create a Google Apps Script web app using
+`tools/google-apps-script-email.gs`.
+
+1. Replace `REPLACE_WITH_LONG_RANDOM_SECRET` with a private random string.
+2. Deploy as a Web App.
+3. Execute as: Me.
+4. Who has access: Anyone.
+5. Add the web app URL to Vercel as `APPS_SCRIPT_EMAIL_WEBHOOK_URL`.
+6. Add the same private random string as `APPS_SCRIPT_EMAIL_SECRET`.

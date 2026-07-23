@@ -87,9 +87,43 @@ async function sendViaResend(message) {
   return response.json();
 }
 
+async function sendViaAppsScript(message) {
+  const response = await fetch(config.email.appsScriptWebhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify({
+      secret: config.email.appsScriptSecret,
+      to: message.to,
+      subject: message.subject,
+      text: message.text
+    })
+  });
+
+  const detail = await response.text();
+  let result;
+  try {
+    result = JSON.parse(detail);
+  } catch {
+    result = { raw: detail };
+  }
+
+  if (!response.ok || result.ok === false) {
+    throw new Error(`Apps Script email failed: ${response.status} ${detail}`);
+  }
+
+  return result;
+}
+
+function getProvider() {
+  if (config.email.resendApiKey) return "resend";
+  if (config.email.appsScriptWebhookUrl) return "apps-script";
+  return "local-outbox";
+}
+
 async function deliver(message, type, registrationId) {
-  if (process.env.VERCEL && !config.email.resendApiKey) {
-    throw new Error("RESEND_API_KEY is not configured, so live email was not sent.");
+  const provider = getProvider();
+  if (process.env.VERCEL && provider === "local-outbox") {
+    throw new Error("Email provider is not configured. Add RESEND_API_KEY or APPS_SCRIPT_EMAIL_WEBHOOK_URL.");
   }
 
   const envelope = {
@@ -97,12 +131,17 @@ async function deliver(message, type, registrationId) {
     type,
     registrationId,
     createdAt: new Date().toISOString(),
-    provider: config.email.resendApiKey ? "resend" : "local-outbox",
+    provider,
     message
   };
 
-  if (config.email.resendApiKey) {
+  if (provider === "resend") {
     const result = await sendViaResend(message);
+    return { ...envelope, status: "sent", providerResponse: result };
+  }
+
+  if (provider === "apps-script") {
+    const result = await sendViaAppsScript(message);
     return { ...envelope, status: "sent", providerResponse: result };
   }
 
@@ -125,5 +164,6 @@ async function sendRegistrationEmails(registration) {
 module.exports = {
   buildWelcomeEmail,
   buildTeamNotification,
+  sendViaAppsScript,
   sendRegistrationEmails
 };
