@@ -88,6 +88,10 @@ async function sendViaResend(message) {
 }
 
 async function deliver(message, type, registrationId) {
+  if (process.env.VERCEL && !config.email.resendApiKey) {
+    throw new Error("RESEND_API_KEY is not configured, so live email was not sent.");
+  }
+
   const envelope = {
     id: `${Date.now()}-${type}`,
     type,

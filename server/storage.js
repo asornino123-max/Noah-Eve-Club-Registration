@@ -6,6 +6,12 @@ const registrationsPath = path.join(config.dataDir, "registrations.json");
 const outboxPath = path.join(config.dataDir, "email-outbox.json");
 const useSupabase = Boolean(config.supabase.url && config.supabase.serviceRoleKey);
 
+function assertWritableStorage() {
+  if (process.env.VERCEL && !useSupabase) {
+    throw new Error("Production database is not configured. Add SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in Vercel.");
+  }
+}
+
 function supabaseEndpoint(table, query = "") {
   const base = config.supabase.url.replace(/\/$/, "");
   return `${base}/rest/v1/${table}${query}`;
@@ -120,6 +126,7 @@ async function listRegistrations() {
     return rows.map(fromRegistrationRow);
   }
 
+  assertWritableStorage();
   return readJson(registrationsPath, []);
 }
 
@@ -133,6 +140,7 @@ async function saveRegistration(registration) {
     return fromRegistrationRow(rows[0]);
   }
 
+  assertWritableStorage();
   const registrations = await listRegistrations();
   registrations.push(registration);
   await writeJson(registrationsPath, registrations);
@@ -140,6 +148,7 @@ async function saveRegistration(registration) {
 }
 
 async function listOutbox() {
+  assertWritableStorage();
   return readJson(outboxPath, []);
 }
 
@@ -162,6 +171,7 @@ async function saveOutboxMessage(message) {
     return rows[0];
   }
 
+  assertWritableStorage();
   const outbox = await listOutbox();
   outbox.push(message);
   await writeJson(outboxPath, outbox);
