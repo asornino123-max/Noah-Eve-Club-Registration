@@ -9,6 +9,6 @@
     "test:api": "node tools/smoke-test.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   }
 }
